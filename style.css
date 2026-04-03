@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  z-index: -1;
+}
+.app {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  padding: 50px;
+}
+.left {
+  max-width: 40%;
+}
+.search-box {
+  margin-top: 20px;
+}
+input {
+  padding: 12px;
+  width: 250px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+}
+
+button {
+  padding: 12px 20px;
+  border-radius: 25px;
+  border: none;
+  margin-left: 10px;
+  cursor: pointer;
+  background: #ff9800;
+  color: white;
+}
+.forecast {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.forecast div {
+  background: rgba(255,255,255,0.2);
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+.right {
+  text-align: right;
+}
+.forecast {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.forecast div {
+  background: rgba(255,255,255,0.2);
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+#temp {
+  font-size: 60px;
+  margin: 10px 0;
+}
+img {
+  width: 100px;
+}
+@media (max-width: 768px) {
+  .app {
+    flex-direction: column;
+    text-align: center;
+  }
+  .right {
+    text-align: center;
+    margin-top: 30px;
+  }
+}
